@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDLineWidthViewController" customModule="MDDoctorApp" customModuleProvider="target">
+            <connections>
+                <outlet property="grayView" destination="mJh-cO-2Uu" id="4Lr-fR-1gr"/>
+                <outlet property="slider" destination="PcL-df-DvW" id="imF-fE-qRH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PcL-df-DvW" customClass="ASValueTrackingSlider">
+                    <rect key="frame" x="11" y="191" width="229" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="KZr-X0-SIf"/>
+                        <constraint firstAttribute="width" constant="225" id="X41-nB-J0Y"/>
+                    </constraints>
+                    <connections>
+                        <action selector="sliderValueChange:" destination="-1" eventType="valueChanged" id="IcF-G3-vHm"/>
+                    </connections>
+                </slider>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mJh-cO-2Uu" customClass="MDGrayView" customModule="MDDoctorApp" customModuleProvider="target">
+                    <rect key="frame" x="13" y="31" width="225" height="100"/>
+                    <color key="backgroundColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Hye-3L-eVa"/>
+                        <constraint firstAttribute="width" constant="225" id="unn-jY-78b"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mJh-cO-2Uu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KUD-86-B2P"/>
+                <constraint firstItem="PcL-df-DvW" firstAttribute="top" secondItem="mJh-cO-2Uu" secondAttribute="bottom" constant="60" id="NjK-y7-fY8"/>
+                <constraint firstItem="mJh-cO-2Uu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-44" id="O59-Hc-CNF"/>
+                <constraint firstItem="PcL-df-DvW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zfO-SW-U2J"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

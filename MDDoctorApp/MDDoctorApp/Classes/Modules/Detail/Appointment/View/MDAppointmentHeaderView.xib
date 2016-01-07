@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MDAppointmentHeaderView" customModule="MDDoctorApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TODAY-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RR-rR-EJ9">
+                    <rect key="frame" x="20" y="5" width="64.5" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.38039215686274508" green="0.60784313725490191" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxQ-hb-7dt">
+                    <rect key="frame" x="84.5" y="6" width="44" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.3803921569" green="0.60784313729999995" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="5RR-rR-EJ9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="6ag-m6-sjj"/>
+                <constraint firstItem="5RR-rR-EJ9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6f2-CM-L1g"/>
+                <constraint firstItem="hxQ-hb-7dt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="JXd-hN-wqA"/>
+                <constraint firstItem="hxQ-hb-7dt" firstAttribute="leading" secondItem="5RR-rR-EJ9" secondAttribute="trailing" id="hpL-An-g1m"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="timeLabel" destination="hxQ-hb-7dt" id="BME-Ia-GmX"/>
+            </connections>
+            <point key="canvasLocation" x="243" y="99"/>
+        </view>
+    </objects>
+</document>

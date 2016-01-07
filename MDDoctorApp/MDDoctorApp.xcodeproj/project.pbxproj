@@ -1,0 +1,1185 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55CB8309FD768407C6268902 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 212825EB71C9ACF90F8936EF /* Pods.framework */; };
+		9626C8EB1C322291005624BC /* MDPersonDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9626C8E91C322291005624BC /* MDPersonDataCell.swift */; };
+		9626C8EC1C322291005624BC /* MDPersonDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9626C8EA1C322291005624BC /* MDPersonDataCell.xib */; };
+		9626C8EF1C3222D5005624BC /* MDAddressInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9626C8ED1C3222D5005624BC /* MDAddressInfoCell.swift */; };
+		9626C8F01C3222D5005624BC /* MDAddressInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9626C8EE1C3222D5005624BC /* MDAddressInfoCell.xib */; };
+		9626C8F31C322308005624BC /* MDContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9626C8F11C322308005624BC /* MDContactCell.swift */; };
+		9626C8F41C322308005624BC /* MDContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9626C8F21C322308005624BC /* MDContactCell.xib */; };
+		9626C8F71C322345005624BC /* MDAdditionInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9626C8F51C322345005624BC /* MDAdditionInfoCell.swift */; };
+		9626C8F81C322345005624BC /* MDAdditionInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9626C8F61C322345005624BC /* MDAdditionInfoCell.xib */; };
+		9626C8FB1C322395005624BC /* MDInterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9626C8F91C322395005624BC /* MDInterViewCell.swift */; };
+		9626C8FC1C322395005624BC /* MDInterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9626C8FA1C322395005624BC /* MDInterViewCell.xib */; };
+		9626C8FE1C3224E6005624BC /* MDRecordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9626C8FD1C3224E6005624BC /* MDRecordTextField.swift */; };
+		96515D321C31041F002491F7 /* MDPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96515D311C31041F002491F7 /* MDPresentationController.swift */; };
+		966BEA071C3CADF500882225 /* MDAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966BEA061C3CADF500882225 /* MDAppointment.swift */; };
+		966F49AC1C3BABAE008831EE /* MDAppointmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966F49AA1C3BABAE008831EE /* MDAppointmentDetailView.swift */; };
+		966F49AD1C3BABAE008831EE /* MDAppointmentDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 966F49AB1C3BABAE008831EE /* MDAppointmentDetailView.xib */; };
+		966F49B01C3BBCF4008831EE /* MDDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966F49AE1C3BBCF4008831EE /* MDDatePickerViewController.swift */; };
+		966F49B11C3BBCF4008831EE /* MDDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 966F49AF1C3BBCF4008831EE /* MDDatePickerViewController.xib */; };
+		9691187F1C2BA57F005FA475 /* MDMasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9691187D1C2BA57F005FA475 /* MDMasterTableViewCell.swift */; };
+		969118801C2BA57F005FA475 /* MDMasterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9691187E1C2BA57F005FA475 /* MDMasterTableViewCell.xib */; };
+		9692B1F01C3378F900F476C1 /* MDImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9692B1EF1C3378F900F476C1 /* MDImageView.swift */; };
+		9692B1F41C33B40D00F476C1 /* MDAddAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9692B1F21C33B40D00F476C1 /* MDAddAppointmentViewController.swift */; };
+		9692B2171C33C54500F476C1 /* MDNoAppointmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9692B2151C33C54500F476C1 /* MDNoAppointmentTableViewCell.swift */; };
+		9692B2181C33C54500F476C1 /* MDNoAppointmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9692B2161C33C54500F476C1 /* MDNoAppointmentTableViewCell.xib */; };
+		9692B21B1C33C79500F476C1 /* MDAppointmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9692B2191C33C79500F476C1 /* MDAppointmentTableViewCell.swift */; };
+		9692B21C1C33C79500F476C1 /* MDAppointmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9692B21A1C33C79500F476C1 /* MDAppointmentTableViewCell.xib */; };
+		9692B21E1C33DBF700F476C1 /* MDAppointmentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9692B21D1C33DBF700F476C1 /* MDAppointmentHeaderView.swift */; };
+		9692B2201C33DC0F00F476C1 /* MDAppointmentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9692B21F1C33DC0F00F476C1 /* MDAppointmentHeaderView.xib */; };
+		9697A5D61C2B7D49005E080C /* MDMasterTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9697A5D51C2B7D49005E080C /* MDMasterTableView.swift */; };
+		9697A5D81C2B962E005E080C /* MDMasterFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9697A5D71C2B962E005E080C /* MDMasterFooterView.swift */; };
+		9697A5DA1C2B9650005E080C /* MDMasterFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9697A5D91C2B9650005E080C /* MDMasterFooterView.xib */; };
+		96AFE44F1C2A779D00319755 /* MDTempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFE44E1C2A779D00319755 /* MDTempViewController.swift */; };
+		96AFE4511C2A922A00319755 /* MDMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFE4501C2A922A00319755 /* MDMasterViewController.swift */; };
+		96AFE4531C2A927300319755 /* MDWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFE4521C2A927300319755 /* MDWelcomeViewController.swift */; };
+		96AFE4551C2A999C00319755 /* MDBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFE4541C2A999C00319755 /* MDBaseTableViewController.swift */; };
+		96AFE4591C2A9F0500319755 /* MDMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFE4581C2A9F0500319755 /* MDMenuModel.swift */; };
+		96AFE46F1C2AA2E200319755 /* MDAppointMentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFE46E1C2AA2E200319755 /* MDAppointMentTableViewController.swift */; };
+		96AFE4711C2AA31100319755 /* MDMedicalRecordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFE4701C2AA31100319755 /* MDMedicalRecordTableViewController.swift */; };
+		96AFE4731C2AA32A00319755 /* MDMyPatientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFE4721C2AA32A00319755 /* MDMyPatientTableViewController.swift */; };
+		96AFE4751C2AA34C00319755 /* MDAccountSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFE4741C2AA34C00319755 /* MDAccountSettingTableViewController.swift */; };
+		96AFE4771C2AA36C00319755 /* MDAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFE4761C2AA36C00319755 /* MDAboutViewController.swift */; };
+		96AFE47B1C2AA80300319755 /* UIColor + AdditionalColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFE47A1C2AA80300319755 /* UIColor + AdditionalColor.swift */; };
+		96BA00141C3B97ED0074F689 /* MDCalendarPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA000A1C3B97ED0074F689 /* MDCalendarPickerView.swift */; };
+		96BA00151C3B97ED0074F689 /* MDCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA000B1C3B97ED0074F689 /* MDCalendarView.swift */; };
+		96BA00161C3B97ED0074F689 /* MDDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA000C1C3B97ED0074F689 /* MDDatePickerView.swift */; };
+		96BA00171C3B97ED0074F689 /* MDTopToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BA000D1C3B97ED0074F689 /* MDTopToolView.swift */; };
+		96BA00181C3B97ED0074F689 /* bt_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA000F1C3B97ED0074F689 /* bt_next@2x.png */; };
+		96BA00191C3B97ED0074F689 /* bt_previous@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA00101C3B97ED0074F689 /* bt_previous@2x.png */; };
+		96BA001A1C3B97ED0074F689 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA00111C3B97ED0074F689 /* calendar.png */; };
+		96BA001B1C3B97ED0074F689 /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA00121C3B97ED0074F689 /* calendar@2x.png */; };
+		96BA001C1C3B97ED0074F689 /* calendar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BA00131C3B97ED0074F689 /* calendar@3x.png */; };
+		96C43C4F1C27D0F8005E282B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C43C4E1C27D0F8005E282B /* AppDelegate.swift */; };
+		96C43C561C27D0F8005E282B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C43C551C27D0F8005E282B /* Assets.xcassets */; };
+		96C43C811C27D901005E282B /* hero_affordable.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96C43C7C1C27D901005E282B /* hero_affordable.jpg */; };
+		96C43C821C27D901005E282B /* hero_certified.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96C43C7D1C27D901005E282B /* hero_certified.jpg */; };
+		96C43C831C27D901005E282B /* hero_iclinic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96C43C7E1C27D901005E282B /* hero_iclinic.jpg */; };
+		96C43C841C27D901005E282B /* hero_web.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 96C43C7F1C27D901005E282B /* hero_web.jpg */; };
+		96C43C861C27D9BE005E282B /* MDSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C43C851C27D9BE005E282B /* MDSplitViewController.swift */; };
+		96C43C891C27DA56005E282B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C43C871C27DA56005E282B /* Main.storyboard */; };
+		96C43C8B1C27DB40005E282B /* MDLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C43C8A1C27DB40005E282B /* MDLoginViewController.swift */; };
+		96C43C8D1C27E1E3005E282B /* MDLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C43C8C1C27E1E3005E282B /* MDLoginView.swift */; };
+		96C43C8F1C27E55F005E282B /* MDLoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C43C8E1C27E55F005E282B /* MDLoginTextField.swift */; };
+		96C43C921C27FB59005E282B /* MDLoginTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C43C911C27FB59005E282B /* MDLoginTool.swift */; };
+		96C43C941C27FB95005E282B /* MDNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C43C931C27FB95005E282B /* MDNetworkTool.swift */; };
+		96C43C961C27FD6E005E282B /* MDAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C43C951C27FD6E005E282B /* MDAccount.swift */; };
+		96D246971C2CD4CF00504F64 /* MDSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D246961C2CD4CF00504F64 /* MDSettingModel.swift */; };
+		96D246991C2CD4E200504F64 /* MDSettingGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D246981C2CD4E200504F64 /* MDSettingGroup.swift */; };
+		96D2469B1C2CE4B400504F64 /* MDPatientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2469A1C2CE4B400504F64 /* MDPatientModel.swift */; };
+		96D2469E1C2CF36800504F64 /* MDPatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D2469C1C2CF36800504F64 /* MDPatientTableViewCell.swift */; };
+		96D2469F1C2CF36800504F64 /* MDPatientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D2469D1C2CF36800504F64 /* MDPatientTableViewCell.xib */; };
+		96D246A11C2CF8C200504F64 /* UIImage + Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D246A01C2CF8C200504F64 /* UIImage + Resize.swift */; };
+		96D246A61C2CFE1400504F64 /* MDPatientSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D246A41C2CFE1400504F64 /* MDPatientSearchViewController.swift */; };
+		96D246A71C2CFE1400504F64 /* MDPatientSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D246A51C2CFE1400504F64 /* MDPatientSearchViewController.xib */; };
+		96D246AA1C2CFE4200504F64 /* MDPatientSignatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D246A81C2CFE4200504F64 /* MDPatientSignatureViewController.swift */; };
+		96D246AB1C2CFE4200504F64 /* MDPatientSignatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D246A91C2CFE4200504F64 /* MDPatientSignatureViewController.xib */; };
+		96D246AD1C2D3A9F00504F64 /* NSDate + String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D246AC1C2D3A9F00504F64 /* NSDate + String.swift */; };
+		96D8C3091C30CC7A00641516 /* colorWheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 96D8C2F51C30CC7A00641516 /* colorWheel.png */; };
+		96D8C30A1C30CC7A00641516 /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D8C2F91C30CC7A00641516 /* ASValuePopUpView.m */; };
+		96D8C30B1C30CC7A00641516 /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D8C2FB1C30CC7A00641516 /* ASValueTrackingSlider.m */; };
+		96D8C30C1C30CC7A00641516 /* MDGrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D8C2FC1C30CC7A00641516 /* MDGrayView.swift */; };
+		96D8C30D1C30CC7A00641516 /* MDLineWidthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D8C2FD1C30CC7A00641516 /* MDLineWidthViewController.swift */; };
+		96D8C30E1C30CC7A00641516 /* MDLineWidthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D8C2FE1C30CC7A00641516 /* MDLineWidthViewController.xib */; };
+		96D8C30F1C30CC7A00641516 /* MDBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D8C2FF1C30CC7A00641516 /* MDBezierPath.swift */; };
+		96D8C3101C30CC7A00641516 /* MDColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D8C3001C30CC7A00641516 /* MDColorViewController.swift */; };
+		96D8C3111C30CC7A00641516 /* MDPaintBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D8C3021C30CC7A00641516 /* MDPaintBoard.swift */; };
+		96D8C3121C30CC7A00641516 /* MDPaintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D8C3031C30CC7A00641516 /* MDPaintView.swift */; };
+		96D8C3131C30CC7A00641516 /* MDToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D8C3041C30CC7A00641516 /* MDToolView.swift */; };
+		96D8C3141C30CC7A00641516 /* UIBezierPath + color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D8C3051C30CC7A00641516 /* UIBezierPath + color.swift */; };
+		96D8C3161C30CC7A00641516 /* UIImage+GetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D8C3081C30CC7A00641516 /* UIImage+GetColor.m */; };
+		96E79DD31C34D8B200652B72 /* MDAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E79DD21C34D8B200652B72 /* MDAppointmentViewController.swift */; };
+		96EB4F471C32355A00B56F3A /* MDBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB4F461C32355A00B56F3A /* MDBaseTableViewCell.swift */; };
+		96EB4F491C32531A00B56F3A /* MDRecordHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EB4F481C32531A00B56F3A /* MDRecordHeaderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		212825EB71C9ACF90F8936EF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3477C1CFCE96B4197C71C4E7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9626C8E91C322291005624BC /* MDPersonDataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPersonDataCell.swift; sourceTree = "<group>"; };
+		9626C8EA1C322291005624BC /* MDPersonDataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDPersonDataCell.xib; sourceTree = "<group>"; };
+		9626C8ED1C3222D5005624BC /* MDAddressInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDAddressInfoCell.swift; sourceTree = "<group>"; };
+		9626C8EE1C3222D5005624BC /* MDAddressInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDAddressInfoCell.xib; sourceTree = "<group>"; };
+		9626C8F11C322308005624BC /* MDContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDContactCell.swift; sourceTree = "<group>"; };
+		9626C8F21C322308005624BC /* MDContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDContactCell.xib; sourceTree = "<group>"; };
+		9626C8F51C322345005624BC /* MDAdditionInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDAdditionInfoCell.swift; sourceTree = "<group>"; };
+		9626C8F61C322345005624BC /* MDAdditionInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDAdditionInfoCell.xib; sourceTree = "<group>"; };
+		9626C8F91C322395005624BC /* MDInterViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDInterViewCell.swift; sourceTree = "<group>"; };
+		9626C8FA1C322395005624BC /* MDInterViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDInterViewCell.xib; sourceTree = "<group>"; };
+		9626C8FD1C3224E6005624BC /* MDRecordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDRecordTextField.swift; sourceTree = "<group>"; };
+		96515D311C31041F002491F7 /* MDPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPresentationController.swift; sourceTree = "<group>"; };
+		966BEA061C3CADF500882225 /* MDAppointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDAppointment.swift; sourceTree = "<group>"; };
+		966F49AA1C3BABAE008831EE /* MDAppointmentDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDAppointmentDetailView.swift; sourceTree = "<group>"; };
+		966F49AB1C3BABAE008831EE /* MDAppointmentDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDAppointmentDetailView.xib; sourceTree = "<group>"; };
+		966F49AE1C3BBCF4008831EE /* MDDatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDDatePickerViewController.swift; sourceTree = "<group>"; };
+		966F49AF1C3BBCF4008831EE /* MDDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDDatePickerViewController.xib; sourceTree = "<group>"; };
+		9691187D1C2BA57F005FA475 /* MDMasterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDMasterTableViewCell.swift; sourceTree = "<group>"; };
+		9691187E1C2BA57F005FA475 /* MDMasterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDMasterTableViewCell.xib; sourceTree = "<group>"; };
+		9692B1EF1C3378F900F476C1 /* MDImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDImageView.swift; sourceTree = "<group>"; };
+		9692B1F21C33B40D00F476C1 /* MDAddAppointmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDAddAppointmentViewController.swift; sourceTree = "<group>"; };
+		9692B2151C33C54500F476C1 /* MDNoAppointmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDNoAppointmentTableViewCell.swift; sourceTree = "<group>"; };
+		9692B2161C33C54500F476C1 /* MDNoAppointmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDNoAppointmentTableViewCell.xib; sourceTree = "<group>"; };
+		9692B2191C33C79500F476C1 /* MDAppointmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDAppointmentTableViewCell.swift; sourceTree = "<group>"; };
+		9692B21A1C33C79500F476C1 /* MDAppointmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDAppointmentTableViewCell.xib; sourceTree = "<group>"; };
+		9692B21D1C33DBF700F476C1 /* MDAppointmentHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDAppointmentHeaderView.swift; sourceTree = "<group>"; };
+		9692B21F1C33DC0F00F476C1 /* MDAppointmentHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDAppointmentHeaderView.xib; sourceTree = "<group>"; };
+		9697A5D51C2B7D49005E080C /* MDMasterTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDMasterTableView.swift; sourceTree = "<group>"; };
+		9697A5D71C2B962E005E080C /* MDMasterFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDMasterFooterView.swift; sourceTree = "<group>"; };
+		9697A5D91C2B9650005E080C /* MDMasterFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDMasterFooterView.xib; sourceTree = "<group>"; };
+		96AFE44E1C2A779D00319755 /* MDTempViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDTempViewController.swift; sourceTree = "<group>"; };
+		96AFE4501C2A922A00319755 /* MDMasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDMasterViewController.swift; sourceTree = "<group>"; };
+		96AFE4521C2A927300319755 /* MDWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDWelcomeViewController.swift; sourceTree = "<group>"; };
+		96AFE4541C2A999C00319755 /* MDBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDBaseTableViewController.swift; sourceTree = "<group>"; };
+		96AFE4581C2A9F0500319755 /* MDMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDMenuModel.swift; sourceTree = "<group>"; };
+		96AFE46E1C2AA2E200319755 /* MDAppointMentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDAppointMentTableViewController.swift; sourceTree = "<group>"; };
+		96AFE4701C2AA31100319755 /* MDMedicalRecordTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDMedicalRecordTableViewController.swift; sourceTree = "<group>"; };
+		96AFE4721C2AA32A00319755 /* MDMyPatientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDMyPatientTableViewController.swift; sourceTree = "<group>"; };
+		96AFE4741C2AA34C00319755 /* MDAccountSettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDAccountSettingTableViewController.swift; sourceTree = "<group>"; };
+		96AFE4761C2AA36C00319755 /* MDAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDAboutViewController.swift; sourceTree = "<group>"; };
+		96AFE47A1C2AA80300319755 /* UIColor + AdditionalColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor + AdditionalColor.swift"; sourceTree = "<group>"; };
+		96BA000A1C3B97ED0074F689 /* MDCalendarPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDCalendarPickerView.swift; sourceTree = "<group>"; };
+		96BA000B1C3B97ED0074F689 /* MDCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDCalendarView.swift; sourceTree = "<group>"; };
+		96BA000C1C3B97ED0074F689 /* MDDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDDatePickerView.swift; sourceTree = "<group>"; };
+		96BA000D1C3B97ED0074F689 /* MDTopToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDTopToolView.swift; sourceTree = "<group>"; };
+		96BA000F1C3B97ED0074F689 /* bt_next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_next@2x.png"; sourceTree = "<group>"; };
+		96BA00101C3B97ED0074F689 /* bt_previous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bt_previous@2x.png"; sourceTree = "<group>"; };
+		96BA00111C3B97ED0074F689 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		96BA00121C3B97ED0074F689 /* calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar@2x.png"; sourceTree = "<group>"; };
+		96BA00131C3B97ED0074F689 /* calendar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar@3x.png"; sourceTree = "<group>"; };
+		96C43C4B1C27D0F8005E282B /* MDDoctorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDDoctorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C43C4E1C27D0F8005E282B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96C43C551C27D0F8005E282B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96C43C5A1C27D0F8005E282B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96C43C7C1C27D901005E282B /* hero_affordable.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hero_affordable.jpg; sourceTree = "<group>"; };
+		96C43C7D1C27D901005E282B /* hero_certified.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hero_certified.jpg; sourceTree = "<group>"; };
+		96C43C7E1C27D901005E282B /* hero_iclinic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hero_iclinic.jpg; sourceTree = "<group>"; };
+		96C43C7F1C27D901005E282B /* hero_web.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hero_web.jpg; sourceTree = "<group>"; };
+		96C43C851C27D9BE005E282B /* MDSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDSplitViewController.swift; sourceTree = "<group>"; };
+		96C43C881C27DA56005E282B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96C43C8A1C27DB40005E282B /* MDLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDLoginViewController.swift; sourceTree = "<group>"; };
+		96C43C8C1C27E1E3005E282B /* MDLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDLoginView.swift; sourceTree = "<group>"; };
+		96C43C8E1C27E55F005E282B /* MDLoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDLoginTextField.swift; sourceTree = "<group>"; };
+		96C43C911C27FB59005E282B /* MDLoginTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDLoginTool.swift; sourceTree = "<group>"; };
+		96C43C931C27FB95005E282B /* MDNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDNetworkTool.swift; sourceTree = "<group>"; };
+		96C43C951C27FD6E005E282B /* MDAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDAccount.swift; sourceTree = "<group>"; };
+		96D246961C2CD4CF00504F64 /* MDSettingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDSettingModel.swift; sourceTree = "<group>"; };
+		96D246981C2CD4E200504F64 /* MDSettingGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDSettingGroup.swift; sourceTree = "<group>"; };
+		96D2469A1C2CE4B400504F64 /* MDPatientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPatientModel.swift; sourceTree = "<group>"; };
+		96D2469C1C2CF36800504F64 /* MDPatientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPatientTableViewCell.swift; sourceTree = "<group>"; };
+		96D2469D1C2CF36800504F64 /* MDPatientTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDPatientTableViewCell.xib; sourceTree = "<group>"; };
+		96D246A01C2CF8C200504F64 /* UIImage + Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + Resize.swift"; sourceTree = "<group>"; };
+		96D246A41C2CFE1400504F64 /* MDPatientSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPatientSearchViewController.swift; sourceTree = "<group>"; };
+		96D246A51C2CFE1400504F64 /* MDPatientSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDPatientSearchViewController.xib; sourceTree = "<group>"; };
+		96D246A81C2CFE4200504F64 /* MDPatientSignatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPatientSignatureViewController.swift; sourceTree = "<group>"; };
+		96D246A91C2CFE4200504F64 /* MDPatientSignatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDPatientSignatureViewController.xib; sourceTree = "<group>"; };
+		96D246AC1C2D3A9F00504F64 /* NSDate + String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate + String.swift"; sourceTree = "<group>"; };
+		96D8C2F51C30CC7A00641516 /* colorWheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorWheel.png; sourceTree = "<group>"; };
+		96D8C2F81C30CC7A00641516 /* ASValuePopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValuePopUpView.h; sourceTree = "<group>"; };
+		96D8C2F91C30CC7A00641516 /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValuePopUpView.m; sourceTree = "<group>"; };
+		96D8C2FA1C30CC7A00641516 /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASValueTrackingSlider.h; sourceTree = "<group>"; };
+		96D8C2FB1C30CC7A00641516 /* ASValueTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASValueTrackingSlider.m; sourceTree = "<group>"; };
+		96D8C2FC1C30CC7A00641516 /* MDGrayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDGrayView.swift; sourceTree = "<group>"; };
+		96D8C2FD1C30CC7A00641516 /* MDLineWidthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDLineWidthViewController.swift; sourceTree = "<group>"; };
+		96D8C2FE1C30CC7A00641516 /* MDLineWidthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDLineWidthViewController.xib; sourceTree = "<group>"; };
+		96D8C2FF1C30CC7A00641516 /* MDBezierPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDBezierPath.swift; sourceTree = "<group>"; };
+		96D8C3001C30CC7A00641516 /* MDColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDColorViewController.swift; sourceTree = "<group>"; };
+		96D8C3011C30CC7A00641516 /* MDPaintBoard-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MDPaintBoard-Bridging-Header.h"; sourceTree = "<group>"; };
+		96D8C3021C30CC7A00641516 /* MDPaintBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPaintBoard.swift; sourceTree = "<group>"; };
+		96D8C3031C30CC7A00641516 /* MDPaintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDPaintView.swift; sourceTree = "<group>"; };
+		96D8C3041C30CC7A00641516 /* MDToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDToolView.swift; sourceTree = "<group>"; };
+		96D8C3051C30CC7A00641516 /* UIBezierPath + color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath + color.swift"; sourceTree = "<group>"; };
+		96D8C3071C30CC7A00641516 /* UIImage+GetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GetColor.h"; sourceTree = "<group>"; };
+		96D8C3081C30CC7A00641516 /* UIImage+GetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GetColor.m"; sourceTree = "<group>"; };
+		96E79DD21C34D8B200652B72 /* MDAppointmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDAppointmentViewController.swift; sourceTree = "<group>"; };
+		96EB4F461C32355A00B56F3A /* MDBaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDBaseTableViewCell.swift; sourceTree = "<group>"; };
+		96EB4F481C32531A00B56F3A /* MDRecordHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MDRecordHeaderView.swift; sourceTree = "<group>"; };
+		96EB4F4A1C328A4300B56F3A /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		F9C231ECC950604B6648027C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96C43C481C27D0F8005E282B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CB8309FD768407C6268902 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		788C8047757A2B3BD83DE1A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3477C1CFCE96B4197C71C4E7 /* Pods.debug.xcconfig */,
+				F9C231ECC950604B6648027C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9626C8E71C321F0B005624BC /* MDRecordCell */ = {
+			isa = PBXGroup;
+			children = (
+				9626C8E91C322291005624BC /* MDPersonDataCell.swift */,
+				9626C8EA1C322291005624BC /* MDPersonDataCell.xib */,
+				9626C8ED1C3222D5005624BC /* MDAddressInfoCell.swift */,
+				9626C8EE1C3222D5005624BC /* MDAddressInfoCell.xib */,
+				9626C8F11C322308005624BC /* MDContactCell.swift */,
+				9626C8F21C322308005624BC /* MDContactCell.xib */,
+				9626C8F51C322345005624BC /* MDAdditionInfoCell.swift */,
+				9626C8F61C322345005624BC /* MDAdditionInfoCell.xib */,
+				9626C8F91C322395005624BC /* MDInterViewCell.swift */,
+				9626C8FA1C322395005624BC /* MDInterViewCell.xib */,
+				96EB4F461C32355A00B56F3A /* MDBaseTableViewCell.swift */,
+			);
+			path = MDRecordCell;
+			sourceTree = "<group>";
+		};
+		9626C8E81C321F0B005624BC /* MDRecordSectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				96EB4F481C32531A00B56F3A /* MDRecordHeaderView.swift */,
+			);
+			path = MDRecordSectionHeaderView;
+			sourceTree = "<group>";
+		};
+		9692B1F11C33B3C000F476C1 /* AddAppointment */ = {
+			isa = PBXGroup;
+			children = (
+				9692B1F21C33B40D00F476C1 /* MDAddAppointmentViewController.swift */,
+				96E79DD21C34D8B200652B72 /* MDAppointmentViewController.swift */,
+				966F49AA1C3BABAE008831EE /* MDAppointmentDetailView.swift */,
+				966F49AB1C3BABAE008831EE /* MDAppointmentDetailView.xib */,
+				966F49AE1C3BBCF4008831EE /* MDDatePickerViewController.swift */,
+				966F49AF1C3BBCF4008831EE /* MDDatePickerViewController.xib */,
+			);
+			path = AddAppointment;
+			sourceTree = "<group>";
+		};
+		96AFE45A1C2AA28400319755 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				96AFE45B1C2AA28400319755 /* Controller */,
+				96AFE45C1C2AA28400319755 /* Model */,
+				96AFE45D1C2AA28400319755 /* View */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		96AFE45B1C2AA28400319755 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96AFE4761C2AA36C00319755 /* MDAboutViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96AFE45C1C2AA28400319755 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96AFE45D1C2AA28400319755 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96AFE45E1C2AA28400319755 /* AccountSetting */ = {
+			isa = PBXGroup;
+			children = (
+				96AFE45F1C2AA28400319755 /* Controller */,
+				96AFE4601C2AA28400319755 /* Model */,
+				96AFE4611C2AA28400319755 /* View */,
+			);
+			path = AccountSetting;
+			sourceTree = "<group>";
+		};
+		96AFE45F1C2AA28400319755 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96AFE4741C2AA34C00319755 /* MDAccountSettingTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96AFE4601C2AA28400319755 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96D246961C2CD4CF00504F64 /* MDSettingModel.swift */,
+				96D246981C2CD4E200504F64 /* MDSettingGroup.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96AFE4611C2AA28400319755 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96AFE4621C2AA28400319755 /* Appointment */ = {
+			isa = PBXGroup;
+			children = (
+				96AFE4631C2AA28400319755 /* Controller */,
+				96AFE4641C2AA28400319755 /* Model */,
+				96AFE4651C2AA28400319755 /* View */,
+			);
+			path = Appointment;
+			sourceTree = "<group>";
+		};
+		96AFE4631C2AA28400319755 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96AFE46E1C2AA2E200319755 /* MDAppointMentTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96AFE4641C2AA28400319755 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96AFE4651C2AA28400319755 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9692B2151C33C54500F476C1 /* MDNoAppointmentTableViewCell.swift */,
+				9692B2161C33C54500F476C1 /* MDNoAppointmentTableViewCell.xib */,
+				9692B2191C33C79500F476C1 /* MDAppointmentTableViewCell.swift */,
+				9692B21A1C33C79500F476C1 /* MDAppointmentTableViewCell.xib */,
+				9692B21D1C33DBF700F476C1 /* MDAppointmentHeaderView.swift */,
+				9692B21F1C33DC0F00F476C1 /* MDAppointmentHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96AFE4661C2AA28400319755 /* MedicalRecord */ = {
+			isa = PBXGroup;
+			children = (
+				96AFE4671C2AA28400319755 /* Controller */,
+				96AFE4681C2AA28400319755 /* Model */,
+				96AFE4691C2AA28400319755 /* View */,
+			);
+			path = MedicalRecord;
+			sourceTree = "<group>";
+		};
+		96AFE4671C2AA28400319755 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96AFE4701C2AA31100319755 /* MDMedicalRecordTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96AFE4681C2AA28400319755 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96AFE4691C2AA28400319755 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9626C8E71C321F0B005624BC /* MDRecordCell */,
+				9626C8E81C321F0B005624BC /* MDRecordSectionHeaderView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96AFE46A1C2AA28400319755 /* MyPatient */ = {
+			isa = PBXGroup;
+			children = (
+				96AFE46B1C2AA28400319755 /* Controller */,
+				96AFE46C1C2AA28400319755 /* Model */,
+				96AFE46D1C2AA28400319755 /* View */,
+			);
+			path = MyPatient;
+			sourceTree = "<group>";
+		};
+		96AFE46B1C2AA28400319755 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96AFE4721C2AA32A00319755 /* MDMyPatientTableViewController.swift */,
+				96515D311C31041F002491F7 /* MDPresentationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96AFE46C1C2AA28400319755 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96D2469A1C2CE4B400504F64 /* MDPatientModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96AFE46D1C2AA28400319755 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96D2469C1C2CF36800504F64 /* MDPatientTableViewCell.swift */,
+				96D2469D1C2CF36800504F64 /* MDPatientTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96BA00091C3B97ED0074F689 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				96BA000A1C3B97ED0074F689 /* MDCalendarPickerView.swift */,
+				96BA000B1C3B97ED0074F689 /* MDCalendarView.swift */,
+				96BA000C1C3B97ED0074F689 /* MDDatePickerView.swift */,
+				96BA000D1C3B97ED0074F689 /* MDTopToolView.swift */,
+				96BA000E1C3B97ED0074F689 /* Resource */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		96BA000E1C3B97ED0074F689 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				96BA000F1C3B97ED0074F689 /* bt_next@2x.png */,
+				96BA00101C3B97ED0074F689 /* bt_previous@2x.png */,
+				96BA00111C3B97ED0074F689 /* calendar.png */,
+				96BA00121C3B97ED0074F689 /* calendar@2x.png */,
+				96BA00131C3B97ED0074F689 /* calendar@3x.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		96C43C421C27D0F8005E282B = {
+			isa = PBXGroup;
+			children = (
+				96EB4F4A1C328A4300B56F3A /* Reveal.framework */,
+				96C43C4D1C27D0F8005E282B /* MDDoctorApp */,
+				96C43C4C1C27D0F8005E282B /* Products */,
+				788C8047757A2B3BD83DE1A7 /* Pods */,
+				C116041D66D5720DF60C20FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		96C43C4C1C27D0F8005E282B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96C43C4B1C27D0F8005E282B /* MDDoctorApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96C43C4D1C27D0F8005E282B /* MDDoctorApp */ = {
+			isa = PBXGroup;
+			children = (
+				96C43C691C27D901005E282B /* Classes */,
+				96C43C4E1C27D0F8005E282B /* AppDelegate.swift */,
+				96C43C871C27DA56005E282B /* Main.storyboard */,
+				96C43C551C27D0F8005E282B /* Assets.xcassets */,
+				96C43C5A1C27D0F8005E282B /* Info.plist */,
+			);
+			path = MDDoctorApp;
+			sourceTree = "<group>";
+		};
+		96C43C691C27D901005E282B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				96C43C6A1C27D901005E282B /* Common(公共) */,
+				96C43C6E1C27D901005E282B /* Extension(扩展) */,
+				96C43C6F1C27D901005E282B /* Library(第三方库) */,
+				96C43C701C27D901005E282B /* Modules(功能模块) */,
+				96C43C7A1C27D901005E282B /* Resources(资源) */,
+				96C43C801C27D901005E282B /* Utils(工具) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		96C43C6A1C27D901005E282B /* Common(公共) */ = {
+			isa = PBXGroup;
+			children = (
+				96C43C6B1C27D901005E282B /* Controller */,
+				96C43C6C1C27D901005E282B /* Model */,
+				96C43C6D1C27D901005E282B /* View */,
+			);
+			name = "Common(公共)";
+			path = Common;
+			sourceTree = "<group>";
+		};
+		96C43C6B1C27D901005E282B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96C43C851C27D9BE005E282B /* MDSplitViewController.swift */,
+				96AFE44E1C2A779D00319755 /* MDTempViewController.swift */,
+				96AFE4521C2A927300319755 /* MDWelcomeViewController.swift */,
+				96AFE4541C2A999C00319755 /* MDBaseTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96C43C6C1C27D901005E282B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96C43C951C27FD6E005E282B /* MDAccount.swift */,
+				966BEA061C3CADF500882225 /* MDAppointment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96C43C6D1C27D901005E282B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96C43C6E1C27D901005E282B /* Extension(扩展) */ = {
+			isa = PBXGroup;
+			children = (
+				96AFE47A1C2AA80300319755 /* UIColor + AdditionalColor.swift */,
+				96D246A01C2CF8C200504F64 /* UIImage + Resize.swift */,
+				96D246AC1C2D3A9F00504F64 /* NSDate + String.swift */,
+			);
+			name = "Extension(扩展)";
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		96C43C6F1C27D901005E282B /* Library(第三方库) */ = {
+			isa = PBXGroup;
+			children = (
+				96BA00091C3B97ED0074F689 /* Calendar */,
+			);
+			name = "Library(第三方库)";
+			path = Library;
+			sourceTree = "<group>";
+		};
+		96C43C701C27D901005E282B /* Modules(功能模块) */ = {
+			isa = PBXGroup;
+			children = (
+				96C43C711C27D901005E282B /* Detail */,
+				96C43C721C27D901005E282B /* Login */,
+				96C43C761C27D901005E282B /* Master */,
+			);
+			name = "Modules(功能模块)";
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		96C43C711C27D901005E282B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				96AFE4621C2AA28400319755 /* Appointment */,
+				96AFE4661C2AA28400319755 /* MedicalRecord */,
+				96AFE46A1C2AA28400319755 /* MyPatient */,
+				96AFE45E1C2AA28400319755 /* AccountSetting */,
+				96AFE45A1C2AA28400319755 /* About */,
+				96D246A21C2CFDCD00504F64 /* PatientSearch */,
+				96D246A31C2CFDCD00504F64 /* PatientSignature */,
+				9692B1F11C33B3C000F476C1 /* AddAppointment */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		96C43C721C27D901005E282B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				96C43C731C27D901005E282B /* Controller */,
+				96C43C741C27D901005E282B /* Model */,
+				96C43C751C27D901005E282B /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		96C43C731C27D901005E282B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96C43C8A1C27DB40005E282B /* MDLoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96C43C741C27D901005E282B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96C43C751C27D901005E282B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96C43C8C1C27E1E3005E282B /* MDLoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96C43C761C27D901005E282B /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				96C43C771C27D901005E282B /* Controller */,
+				96C43C781C27D901005E282B /* Model */,
+				96C43C791C27D901005E282B /* View */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		96C43C771C27D901005E282B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96AFE4501C2A922A00319755 /* MDMasterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96C43C781C27D901005E282B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96AFE4581C2A9F0500319755 /* MDMenuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96C43C791C27D901005E282B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9697A5D51C2B7D49005E080C /* MDMasterTableView.swift */,
+				9697A5D71C2B962E005E080C /* MDMasterFooterView.swift */,
+				9697A5D91C2B9650005E080C /* MDMasterFooterView.xib */,
+				9691187D1C2BA57F005FA475 /* MDMasterTableViewCell.swift */,
+				9691187E1C2BA57F005FA475 /* MDMasterTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96C43C7A1C27D901005E282B /* Resources(资源) */ = {
+			isa = PBXGroup;
+			children = (
+				96C43C7B1C27D901005E282B /* welcome */,
+			);
+			name = "Resources(资源)";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		96C43C7B1C27D901005E282B /* welcome */ = {
+			isa = PBXGroup;
+			children = (
+				96C43C7C1C27D901005E282B /* hero_affordable.jpg */,
+				96C43C7D1C27D901005E282B /* hero_certified.jpg */,
+				96C43C7E1C27D901005E282B /* hero_iclinic.jpg */,
+				96C43C7F1C27D901005E282B /* hero_web.jpg */,
+			);
+			path = welcome;
+			sourceTree = "<group>";
+		};
+		96C43C801C27D901005E282B /* Utils(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				96C43C8E1C27E55F005E282B /* MDLoginTextField.swift */,
+				96C43C911C27FB59005E282B /* MDLoginTool.swift */,
+				96C43C931C27FB95005E282B /* MDNetworkTool.swift */,
+				9626C8FD1C3224E6005624BC /* MDRecordTextField.swift */,
+				9692B1EF1C3378F900F476C1 /* MDImageView.swift */,
+			);
+			name = "Utils(工具)";
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		96D246A21C2CFDCD00504F64 /* PatientSearch */ = {
+			isa = PBXGroup;
+			children = (
+				96D246A41C2CFE1400504F64 /* MDPatientSearchViewController.swift */,
+				96D246A51C2CFE1400504F64 /* MDPatientSearchViewController.xib */,
+			);
+			path = PatientSearch;
+			sourceTree = "<group>";
+		};
+		96D246A31C2CFDCD00504F64 /* PatientSignature */ = {
+			isa = PBXGroup;
+			children = (
+				96D246A81C2CFE4200504F64 /* MDPatientSignatureViewController.swift */,
+				96D246A91C2CFE4200504F64 /* MDPatientSignatureViewController.xib */,
+				96D8C2F41C30CC7A00641516 /* PaintBoard */,
+			);
+			path = PatientSignature;
+			sourceTree = "<group>";
+		};
+		96D8C2F41C30CC7A00641516 /* PaintBoard */ = {
+			isa = PBXGroup;
+			children = (
+				96D8C2F51C30CC7A00641516 /* colorWheel.png */,
+				96D8C2F61C30CC7A00641516 /* lineWidthSlider */,
+				96D8C2FF1C30CC7A00641516 /* MDBezierPath.swift */,
+				96D8C3001C30CC7A00641516 /* MDColorViewController.swift */,
+				96D8C3011C30CC7A00641516 /* MDPaintBoard-Bridging-Header.h */,
+				96D8C3021C30CC7A00641516 /* MDPaintBoard.swift */,
+				96D8C3031C30CC7A00641516 /* MDPaintView.swift */,
+				96D8C3041C30CC7A00641516 /* MDToolView.swift */,
+				96D8C3051C30CC7A00641516 /* UIBezierPath + color.swift */,
+				96D8C3071C30CC7A00641516 /* UIImage+GetColor.h */,
+				96D8C3081C30CC7A00641516 /* UIImage+GetColor.m */,
+			);
+			path = PaintBoard;
+			sourceTree = "<group>";
+		};
+		96D8C2F61C30CC7A00641516 /* lineWidthSlider */ = {
+			isa = PBXGroup;
+			children = (
+				96D8C2F71C30CC7A00641516 /* ASValueTrackingSlider */,
+				96D8C2FC1C30CC7A00641516 /* MDGrayView.swift */,
+				96D8C2FD1C30CC7A00641516 /* MDLineWidthViewController.swift */,
+				96D8C2FE1C30CC7A00641516 /* MDLineWidthViewController.xib */,
+			);
+			path = lineWidthSlider;
+			sourceTree = "<group>";
+		};
+		96D8C2F71C30CC7A00641516 /* ASValueTrackingSlider */ = {
+			isa = PBXGroup;
+			children = (
+				96D8C2F81C30CC7A00641516 /* ASValuePopUpView.h */,
+				96D8C2F91C30CC7A00641516 /* ASValuePopUpView.m */,
+				96D8C2FA1C30CC7A00641516 /* ASValueTrackingSlider.h */,
+				96D8C2FB1C30CC7A00641516 /* ASValueTrackingSlider.m */,
+			);
+			path = ASValueTrackingSlider;
+			sourceTree = "<group>";
+		};
+		C116041D66D5720DF60C20FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				212825EB71C9ACF90F8936EF /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96C43C4A1C27D0F8005E282B /* MDDoctorApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96C43C5D1C27D0F8005E282B /* Build configuration list for PBXNativeTarget "MDDoctorApp" */;
+			buildPhases = (
+				4008D81CF695609224FF3A97 /* Check Pods Manifest.lock */,
+				96C43C471C27D0F8005E282B /* Sources */,
+				96C43C481C27D0F8005E282B /* Frameworks */,
+				96C43C491C27D0F8005E282B /* Resources */,
+				E508BCA18E238D6322492B31 /* Embed Pods Frameworks */,
+				E0C9383AC1C1FF72AEA4AC8E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MDDoctorApp;
+			productName = MDDoctorApp;
+			productReference = 96C43C4B1C27D0F8005E282B /* MDDoctorApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96C43C431C27D0F8005E282B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MD;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = mdland;
+				TargetAttributes = {
+					96C43C4A1C27D0F8005E282B = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 92R99322LX;
+					};
+				};
+			};
+			buildConfigurationList = 96C43C461C27D0F8005E282B /* Build configuration list for PBXProject "MDDoctorApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96C43C421C27D0F8005E282B;
+			productRefGroup = 96C43C4C1C27D0F8005E282B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96C43C4A1C27D0F8005E282B /* MDDoctorApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96C43C491C27D0F8005E282B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C43C841C27D901005E282B /* hero_web.jpg in Resources */,
+				96BA001A1C3B97ED0074F689 /* calendar.png in Resources */,
+				96C43C561C27D0F8005E282B /* Assets.xcassets in Resources */,
+				969118801C2BA57F005FA475 /* MDMasterTableViewCell.xib in Resources */,
+				9626C8EC1C322291005624BC /* MDPersonDataCell.xib in Resources */,
+				96D246AB1C2CFE4200504F64 /* MDPatientSignatureViewController.xib in Resources */,
+				96BA00191C3B97ED0074F689 /* bt_previous@2x.png in Resources */,
+				96C43C821C27D901005E282B /* hero_certified.jpg in Resources */,
+				9692B2201C33DC0F00F476C1 /* MDAppointmentHeaderView.xib in Resources */,
+				96D2469F1C2CF36800504F64 /* MDPatientTableViewCell.xib in Resources */,
+				96D246A71C2CFE1400504F64 /* MDPatientSearchViewController.xib in Resources */,
+				9697A5DA1C2B9650005E080C /* MDMasterFooterView.xib in Resources */,
+				9692B2181C33C54500F476C1 /* MDNoAppointmentTableViewCell.xib in Resources */,
+				96BA00181C3B97ED0074F689 /* bt_next@2x.png in Resources */,
+				96C43C891C27DA56005E282B /* Main.storyboard in Resources */,
+				966F49AD1C3BABAE008831EE /* MDAppointmentDetailView.xib in Resources */,
+				96D8C30E1C30CC7A00641516 /* MDLineWidthViewController.xib in Resources */,
+				96D8C3091C30CC7A00641516 /* colorWheel.png in Resources */,
+				96C43C831C27D901005E282B /* hero_iclinic.jpg in Resources */,
+				96C43C811C27D901005E282B /* hero_affordable.jpg in Resources */,
+				96BA001B1C3B97ED0074F689 /* calendar@2x.png in Resources */,
+				9626C8F81C322345005624BC /* MDAdditionInfoCell.xib in Resources */,
+				9626C8F01C3222D5005624BC /* MDAddressInfoCell.xib in Resources */,
+				9626C8FC1C322395005624BC /* MDInterViewCell.xib in Resources */,
+				9626C8F41C322308005624BC /* MDContactCell.xib in Resources */,
+				9692B21C1C33C79500F476C1 /* MDAppointmentTableViewCell.xib in Resources */,
+				96BA001C1C3B97ED0074F689 /* calendar@3x.png in Resources */,
+				966F49B11C3BBCF4008831EE /* MDDatePickerViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4008D81CF695609224FF3A97 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0C9383AC1C1FF72AEA4AC8E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E508BCA18E238D6322492B31 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96C43C471C27D0F8005E282B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966F49B01C3BBCF4008831EE /* MDDatePickerViewController.swift in Sources */,
+				9626C8F71C322345005624BC /* MDAdditionInfoCell.swift in Sources */,
+				96D8C30A1C30CC7A00641516 /* ASValuePopUpView.m in Sources */,
+				96D246AA1C2CFE4200504F64 /* MDPatientSignatureViewController.swift in Sources */,
+				96D8C30D1C30CC7A00641516 /* MDLineWidthViewController.swift in Sources */,
+				96AFE4511C2A922A00319755 /* MDMasterViewController.swift in Sources */,
+				96BA00151C3B97ED0074F689 /* MDCalendarView.swift in Sources */,
+				96AFE4751C2AA34C00319755 /* MDAccountSettingTableViewController.swift in Sources */,
+				96AFE47B1C2AA80300319755 /* UIColor + AdditionalColor.swift in Sources */,
+				96D246991C2CD4E200504F64 /* MDSettingGroup.swift in Sources */,
+				96AFE4731C2AA32A00319755 /* MDMyPatientTableViewController.swift in Sources */,
+				96C43C961C27FD6E005E282B /* MDAccount.swift in Sources */,
+				9626C8EB1C322291005624BC /* MDPersonDataCell.swift in Sources */,
+				9626C8FE1C3224E6005624BC /* MDRecordTextField.swift in Sources */,
+				9692B21B1C33C79500F476C1 /* MDAppointmentTableViewCell.swift in Sources */,
+				9692B2171C33C54500F476C1 /* MDNoAppointmentTableViewCell.swift in Sources */,
+				96EB4F471C32355A00B56F3A /* MDBaseTableViewCell.swift in Sources */,
+				96C43C941C27FB95005E282B /* MDNetworkTool.swift in Sources */,
+				96515D321C31041F002491F7 /* MDPresentationController.swift in Sources */,
+				96E79DD31C34D8B200652B72 /* MDAppointmentViewController.swift in Sources */,
+				96C43C8B1C27DB40005E282B /* MDLoginViewController.swift in Sources */,
+				9692B21E1C33DBF700F476C1 /* MDAppointmentHeaderView.swift in Sources */,
+				96C43C8D1C27E1E3005E282B /* MDLoginView.swift in Sources */,
+				9692B1F01C3378F900F476C1 /* MDImageView.swift in Sources */,
+				96BA00171C3B97ED0074F689 /* MDTopToolView.swift in Sources */,
+				966F49AC1C3BABAE008831EE /* MDAppointmentDetailView.swift in Sources */,
+				96D246A11C2CF8C200504F64 /* UIImage + Resize.swift in Sources */,
+				96AFE4551C2A999C00319755 /* MDBaseTableViewController.swift in Sources */,
+				96C43C921C27FB59005E282B /* MDLoginTool.swift in Sources */,
+				96D246AD1C2D3A9F00504F64 /* NSDate + String.swift in Sources */,
+				96D8C3111C30CC7A00641516 /* MDPaintBoard.swift in Sources */,
+				966BEA071C3CADF500882225 /* MDAppointment.swift in Sources */,
+				9692B1F41C33B40D00F476C1 /* MDAddAppointmentViewController.swift in Sources */,
+				9697A5D61C2B7D49005E080C /* MDMasterTableView.swift in Sources */,
+				96EB4F491C32531A00B56F3A /* MDRecordHeaderView.swift in Sources */,
+				96C43C861C27D9BE005E282B /* MDSplitViewController.swift in Sources */,
+				96AFE4711C2AA31100319755 /* MDMedicalRecordTableViewController.swift in Sources */,
+				96AFE4531C2A927300319755 /* MDWelcomeViewController.swift in Sources */,
+				96D8C30F1C30CC7A00641516 /* MDBezierPath.swift in Sources */,
+				96D8C3121C30CC7A00641516 /* MDPaintView.swift in Sources */,
+				9626C8EF1C3222D5005624BC /* MDAddressInfoCell.swift in Sources */,
+				9626C8FB1C322395005624BC /* MDInterViewCell.swift in Sources */,
+				96D8C3161C30CC7A00641516 /* UIImage+GetColor.m in Sources */,
+				96D8C30C1C30CC7A00641516 /* MDGrayView.swift in Sources */,
+				96D2469B1C2CE4B400504F64 /* MDPatientModel.swift in Sources */,
+				96C43C4F1C27D0F8005E282B /* AppDelegate.swift in Sources */,
+				9697A5D81C2B962E005E080C /* MDMasterFooterView.swift in Sources */,
+				96D8C3141C30CC7A00641516 /* UIBezierPath + color.swift in Sources */,
+				96D246971C2CD4CF00504F64 /* MDSettingModel.swift in Sources */,
+				96BA00141C3B97ED0074F689 /* MDCalendarPickerView.swift in Sources */,
+				96AFE44F1C2A779D00319755 /* MDTempViewController.swift in Sources */,
+				96BA00161C3B97ED0074F689 /* MDDatePickerView.swift in Sources */,
+				96D246A61C2CFE1400504F64 /* MDPatientSearchViewController.swift in Sources */,
+				96D8C30B1C30CC7A00641516 /* ASValueTrackingSlider.m in Sources */,
+				9626C8F31C322308005624BC /* MDContactCell.swift in Sources */,
+				96D8C3131C30CC7A00641516 /* MDToolView.swift in Sources */,
+				96C43C8F1C27E55F005E282B /* MDLoginTextField.swift in Sources */,
+				9691187F1C2BA57F005FA475 /* MDMasterTableViewCell.swift in Sources */,
+				96AFE4771C2AA36C00319755 /* MDAboutViewController.swift in Sources */,
+				96AFE46F1C2AA2E200319755 /* MDAppointMentTableViewController.swift in Sources */,
+				96D8C3101C30CC7A00641516 /* MDColorViewController.swift in Sources */,
+				96D2469E1C2CF36800504F64 /* MDPatientTableViewCell.swift in Sources */,
+				96AFE4591C2A9F0500319755 /* MDMenuModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96C43C871C27DA56005E282B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96C43C881C27DA56005E282B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96C43C5B1C27D0F8005E282B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96C43C5C1C27D0F8005E282B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96C43C5E1C27D0F8005E282B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3477C1CFCE96B4197C71C4E7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MDDoctorApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdland.MDDoctor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MDDoctorApp/Classes/Modules/Detail/PatientSignature/PaintBoard/MDPaintBoard-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		96C43C5F1C27D0F8005E282B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9C231ECC950604B6648027C /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MDDoctorApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"MJExtension\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SVProgressHUD\"",
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdland.MDDoctor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "MDDoctorApp/Classes/Modules/Detail/PatientSignature/PaintBoard/MDPaintBoard-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96C43C461C27D0F8005E282B /* Build configuration list for PBXProject "MDDoctorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C43C5B1C27D0F8005E282B /* Debug */,
+				96C43C5C1C27D0F8005E282B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96C43C5D1C27D0F8005E282B /* Build configuration list for PBXNativeTarget "MDDoctorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C43C5E1C27D0F8005E282B /* Debug */,
+				96C43C5F1C27D0F8005E282B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96C43C431C27D0F8005E282B /* Project object */;
+}

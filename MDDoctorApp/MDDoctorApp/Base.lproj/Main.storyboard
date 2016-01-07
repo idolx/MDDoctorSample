@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Split View Controller-->
+        <scene sceneID="IxP-EL-rtE">
+            <objects>
+                <splitViewController storyboardIdentifier="MDSplitVC" id="D2Z-PR-bUU" customClass="MDSplitViewController" customModule="MDDoctorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="UeP-xQ-twz" kind="relationship" relationship="detailViewController" id="q27-dU-Ija"/>
+                        <segue destination="Ig7-GJ-xHE" kind="relationship" relationship="masterViewController" id="EiE-5X-g1F"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIy-Z5-ssC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-692" y="-83"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="gLK-g9-uaX">
+            <objects>
+                <viewController storyboardIdentifier="MDLoginVC" id="Q9u-Sw-VWm" customClass="MDLoginViewController" customModule="MDDoctorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cep-Wg-Rvp"/>
+                        <viewControllerLayoutGuide type="bottom" id="OcU-L0-t2r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cL7-w9-ohU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="XSh-H5-utb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rku-ib-86N" userLabel="loginView" customClass="MDLoginView" customModule="MDDoctorApp" customModuleProvider="target">
+                                <rect key="frame" x="120" y="220" width="360" height="360"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_iClinicSign" translatesAutoresizingMaskIntoConstraints="NO" id="TRM-ot-pvW">
+                                        <rect key="frame" x="4" y="0.0" width="352" height="60"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jdb-3h-ECv" customClass="MDLoginTextField" customModule="MDDoctorApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="120" width="340" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="RLH-sh-wbL"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOT-Tl-EFx">
+                                        <rect key="frame" x="10" y="175" width="78.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdU-Tf-uFs">
+                                        <rect key="frame" x="10" y="90" width="67" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bIX-uj-6EW" customClass="MDLoginTextField" customModule="MDDoctorApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="205.5" width="340" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="FXK-wR-lbq"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efl-2o-QOT">
+                                        <rect key="frame" x="10" y="280" width="340" height="45"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="unX-0A-qgb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Login in"/>
+                                        <connections>
+                                            <action selector="login" destination="Rku-ib-86N" eventType="touchUpInside" id="laK-WX-4TV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Efl-2o-QOT" firstAttribute="centerX" secondItem="Rku-ib-86N" secondAttribute="centerX" id="FaG-ZI-DcL"/>
+                                    <constraint firstAttribute="height" constant="360" id="IQt-WX-QhX"/>
+                                    <constraint firstItem="Efl-2o-QOT" firstAttribute="top" secondItem="bIX-uj-6EW" secondAttribute="bottom" constant="30" id="Jdk-Oz-isN"/>
+                                    <constraint firstItem="kOT-Tl-EFx" firstAttribute="top" secondItem="Jdb-3h-ECv" secondAttribute="bottom" constant="10" id="Kmv-RW-EV7"/>
+                                    <constraint firstItem="Efl-2o-QOT" firstAttribute="leading" secondItem="Rku-ib-86N" secondAttribute="leading" constant="10" id="MeC-2o-wCN"/>
+                                    <constraint firstItem="bIX-uj-6EW" firstAttribute="leading" secondItem="Rku-ib-86N" secondAttribute="leading" constant="10" id="Nhs-xN-NvJ"/>
+                                    <constraint firstItem="Jdb-3h-ECv" firstAttribute="top" secondItem="HdU-Tf-uFs" secondAttribute="bottom" constant="10" id="P3n-zN-50Q"/>
+                                    <constraint firstItem="kOT-Tl-EFx" firstAttribute="leading" secondItem="Rku-ib-86N" secondAttribute="leading" constant="10" id="QaI-SK-6e7"/>
+                                    <constraint firstItem="Jdb-3h-ECv" firstAttribute="leading" secondItem="Rku-ib-86N" secondAttribute="leading" constant="10" id="VOU-om-Up2"/>
+                                    <constraint firstItem="bIX-uj-6EW" firstAttribute="top" secondItem="kOT-Tl-EFx" secondAttribute="bottom" constant="10" id="bnK-bS-oCr"/>
+                                    <constraint firstItem="TRM-ot-pvW" firstAttribute="top" secondItem="Rku-ib-86N" secondAttribute="top" id="cwl-Wm-BbC"/>
+                                    <constraint firstAttribute="width" constant="360" id="eJr-WJ-280"/>
+                                    <constraint firstAttribute="trailing" secondItem="bIX-uj-6EW" secondAttribute="trailing" constant="10" id="hym-79-Xlq"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jdb-3h-ECv" secondAttribute="trailing" constant="10" id="oGj-Ae-Gbp"/>
+                                    <constraint firstItem="HdU-Tf-uFs" firstAttribute="top" secondItem="TRM-ot-pvW" secondAttribute="bottom" constant="30" id="r8q-Nk-oe9"/>
+                                    <constraint firstItem="TRM-ot-pvW" firstAttribute="centerX" secondItem="Rku-ib-86N" secondAttribute="centerX" id="uVh-2P-KS3"/>
+                                    <constraint firstItem="HdU-Tf-uFs" firstAttribute="leading" secondItem="Rku-ib-86N" secondAttribute="leading" constant="10" id="vzK-mJ-gFL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Efl-2o-QOT" secondAttribute="trailing" constant="10" id="xzQ-k3-BB2"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="passwordTextField" destination="bIX-uj-6EW" id="iIs-cr-oMh"/>
+                                    <outlet property="usenameTextField" destination="Jdb-3h-ECv" id="qtA-0s-nfR"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OcU-L0-t2r" firstAttribute="top" secondItem="XSh-H5-utb" secondAttribute="bottom" id="0Tv-O2-QAY"/>
+                            <constraint firstItem="XSh-H5-utb" firstAttribute="leading" secondItem="cL7-w9-ohU" secondAttribute="leading" id="373-34-JVO"/>
+                            <constraint firstItem="Rku-ib-86N" firstAttribute="centerX" secondItem="cL7-w9-ohU" secondAttribute="centerX" id="9ab-QF-gb0"/>
+                            <constraint firstItem="Rku-ib-86N" firstAttribute="top" secondItem="Cep-Wg-Rvp" secondAttribute="bottom" constant="200" id="C3w-Et-aaF"/>
+                            <constraint firstItem="XSh-H5-utb" firstAttribute="top" secondItem="Cep-Wg-Rvp" secondAttribute="bottom" constant="-20" id="Ds8-25-VJU"/>
+                            <constraint firstAttribute="trailing" secondItem="XSh-H5-utb" secondAttribute="trailing" id="gOU-4b-VoA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginView" destination="Rku-ib-86N" id="bLl-8C-ybt"/>
+                        <outlet property="loginViewTopConstraint" destination="C3w-Et-aaF" id="Zg0-jR-yb7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4R-oc-f5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-692" y="618"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="jAY-sC-AGz">
+            <objects>
+                <viewController id="2o5-1a-W1G" customClass="MDWelcomeViewController" customModule="MDDoctorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tMb-6A-meN"/>
+                        <viewControllerLayoutGuide type="bottom" id="qt0-ib-6FV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rRd-KA-Ogf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1WX-9v-vvL">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qt0-ib-6FV" firstAttribute="top" secondItem="1WX-9v-vvL" secondAttribute="bottom" id="8ka-XZ-XOb"/>
+                            <constraint firstItem="1WX-9v-vvL" firstAttribute="leading" secondItem="rRd-KA-Ogf" secondAttribute="leading" id="Q5Q-K8-TL9"/>
+                            <constraint firstAttribute="trailing" secondItem="1WX-9v-vvL" secondAttribute="trailing" id="aFM-0m-h5P"/>
+                            <constraint firstItem="1WX-9v-vvL" firstAttribute="top" secondItem="tMb-6A-meN" secondAttribute="bottom" id="i6R-pJ-5yh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RMF-oG-YGQ"/>
+                    <connections>
+                        <outlet property="ad_imageView" destination="1WX-9v-vvL" id="ZCC-Gs-cvr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sET-8x-aWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808" y="220"/>
+        </scene>
+        <!--Master View Controller-->
+        <scene sceneID="lwu-gw-Olf">
+            <objects>
+                <viewController id="Ig7-GJ-xHE" customClass="MDMasterViewController" customModule="MDDoctorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7nA-IL-yp5"/>
+                        <viewControllerLayoutGuide type="bottom" id="0bi-hF-yxa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3yF-pc-cCL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7T-xQ-Aif" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="-452"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OoM-LR-xrX">
+            <objects>
+                <navigationController id="UeP-xQ-twz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Hc-5s-Gqr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2o5-1a-W1G" kind="relationship" relationship="rootViewController" id="mtP-5X-DMr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Vk-1J-ZzF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="220"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="600" height="960"/>
+        <image name="logo_iClinicSign" width="352" height="60"/>
+    </resources>
+</document>
