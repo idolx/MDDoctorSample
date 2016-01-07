@@ -206,19 +206,19 @@ extension MDLoginTool: NSXMLParserDelegate {
     //开始解析
     func parserDidStartDocument(parser: NSXMLParser) {
         
-        print("解析开始")
+//        print("解析开始")
     }
     
     //发现节点
     func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String]) {
         
-        print("开始elementName = \(elementName)")
+//        print("开始elementName = \(elementName)")
     }
     
     //发现节点内容
     func parser(parser: NSXMLParser, foundCharacters string: String) {
         
-        print("string = \(string)")
+//        print("string = \(string)")
         
         parserResult_arr.append(string)
     }
@@ -226,7 +226,7 @@ extension MDLoginTool: NSXMLParserDelegate {
     //节点结束
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         
-        print("结束elementName = \(elementName)")
+//        print("结束elementName = \(elementName)")
         
         parserResult_dict["\(elementName)"] = parserResult_arr.last
     }

@@ -53,9 +53,6 @@ class MDLoginView: UIView {
             SVProgressHUD.dismiss()
             
             if error != nil {    //失败处理
-            
-//                //发送登录失败通知
-//                NSNotificationCenter.defaultCenter().postNotificationName(MDLoginStatusDidChangedNotification, object: false)
                 
                 if error?.code < 0 && error?.code > -10 {   //自定义error
                     
